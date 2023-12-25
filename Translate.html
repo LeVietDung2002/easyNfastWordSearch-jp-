@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本語速度辞書 - Create Links</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>日本語速度辞書</h1>
+
+<label for="wordInput">Enter a word:</label>
+<input type="text" id="wordInput" oninput="updateColor()">
+<button onclick="generateLinks()">Generate Links</button>
+<div id="result"></div>
+
+<!-- Buttons for background color -->
+<div id="colorOptions">
+    <button class="colorOption" onclick="changeBackgroundColor('#FFFFFF')">Default</button>
+    <button class="colorOption" onclick="changeBackgroundColor('#00FF00')">Green</button>
+    <button class="colorOption" onclick="changeBackgroundColor('#FFD700')">Gold</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
